@@ -3,7 +3,7 @@ package Principal;
 public class Principal {
     public static void main(String[] args) {
         //Instanciando piloto e corrida
-        Piloto piloto = new Piloto("Joao Pedro",30,Sexo.MASCULINO,"Tecnologia");
+        Piloto piloto = new Piloto("Joao Pedro",30,Sexo.MASCULINO,"A");
         CarroCorrida corrida = new CarroCorrida(10,piloto,100,50,true);
 
         //Exibindo informacoes originais sobre piloto e corrida
@@ -12,7 +12,7 @@ public class Principal {
 
         //Modificacoes
         piloto.setNome("Joao Pedro Gomes"); //Altera nome do piloto para Joao Pedro Gomes
-        piloto.setEquipe("Operacional"); //Altera equipe do piloto para Operacional
+        piloto.setEquipe("B"); //Altera equipe do piloto para equipe B
         corrida.acelerar(20); //Velocidade atual passa a ser 50+20 = 70 km/h
         corrida.setNumeroCarro(15); //Altera número do carro para 15
         corrida.parar(); //Para o automóvel
